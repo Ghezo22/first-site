@@ -1,16 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SwiftFix Phones</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#f4f4f4;
+      color:#222;
+    }
+
+    header{
+      background:#111827;
+      color:white;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:18px;
+      opacity:0.9;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:14px 28px;
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+    }
+
+    .section{
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    .card-container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:white;
+      width:250px;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
 
-    <h1>Welcome to My First Website 🚀</h1>
-    <p>This site was deployed by me.</p>
+<body>
 
-    <button onclick="alert('You clicked me
-        Click Me
-    </button>
+  <header>
+    <h1>SwiftFix Phones</h1>
+    <p>Fast, affordable and reliable phone repairs in Lagos.</p>
 
-  </body>
+    <a class="btn" href="https://wa.me/2340000000000">
+      Chat on WhatsApp
+    </a>
+  </header>
+
+  <section class="section">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Screen Replacement</h3>
+        <p>Broken screen? We fix it quickly and professionally.</p>
+      </div>
+
+      <div class="card">
+        <h3>Battery Replacement</h3>
+        <p>Get longer battery life with quality replacements.</p>
+      </div>
+
+      <div class="card">
+        <h3>Water Damage Repair</h3>
+        <p>We revive water-damaged phones and devices.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Choose Us?</h2>
+
+    <p>
+      Trusted by customers across Lagos for fast delivery,
+      quality repairs and affordable pricing.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 SwiftFix Phones. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>

@@ -149,25 +149,193 @@
       padding:20px;
       font-size:14px;
     }
+.hero{
+  min-height:100vh;
+  background:#0b1120;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px 10%;
+  gap:60px;
+  flex-wrap:wrap;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-content{
+  flex:1;
+  min-width:300px;
+  z-index:2;
+}
+
+.hero-tag{
+  color:#22d3ee;
+  font-weight:bold;
+  margin-bottom:20px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  font-size:58px;
+  line-height:1.1;
+  margin-bottom:25px;
+  max-width:650px;
+}
+
+.hero-text{
+  color:#cbd5e1;
+  font-size:18px;
+  max-width:600px;
+  margin-bottom:35px;
+  line-height:1.8;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.primary-btn{
+  background:#22d3ee;
+  color:#0b1120;
+  padding:15px 30px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.primary-btn:hover{
+  transform:translateY(-4px);
+}
+
+.secondary-btn{
+  border:1px solid #334155;
+  color:white;
+  padding:15px 30px;
+  border-radius:12px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.secondary-btn:hover{
+  background:#111827;
+}
+
+.hero-visual{
+  flex:1;
+  min-width:300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.glow-circle{
+  width:320px;
+  height:320px;
+  background:#22d3ee;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:0.25;
+  position:absolute;
+}
+
+.glass-card{
+  position:relative;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(20px);
+  padding:40px;
+  border-radius:24px;
+  width:320px;
+  z-index:2;
+  box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+
+.glass-card h3{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.glass-card p{
+  color:#cbd5e1;
+  line-height:1.7;
+}
+
+@media(max-width:900px){
+
+  .hero{
+    padding:60px 7%;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+}
 
   </style>
 </head>
 
 <body>
 
-  <header>
+  <header class="hero">
 
-    <h1>Flame Grill</h1>
+  <div class="hero-content">
 
-    <p>
-      Delicious meals, premium dining experience and unforgettable flavors.
+    <p class="hero-tag">
+      AI-Powered Creative Agency
     </p>
 
-    <a href="https://wa.me/2340000000000" class="btn">
-      Reserve a Table
-    </a>
+    <h1>
+      We Build Intelligent Digital Systems For Modern Brands
+    </h1>
 
-  </header>
+    <p class="hero-text">
+      ZARELIX STUDIO helps businesses grow through premium websites,
+      branding, automation and AI-powered creative solutions.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="https://wa.me/2340000000000" class="primary-btn">
+        Let’s Talk
+      </a>
+
+      <a href="#" class="secondary-btn">
+        Book Consultation
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="hero-visual">
+
+    <div class="glow-circle"></div>
+
+    <div class="glass-card">
+
+      <h3>ZARELIX STUDIO</h3>
+
+      <p>
+        Intelligent systems. Creative solutions. Modern growth.
+      </p>
+
+    </div>
+
+  </div>
+
+</header>
 
   <section class="section">
 

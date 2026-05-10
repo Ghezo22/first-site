@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>NovaFix Repairs</title>
+  <title>Flame Grill Restaurant</title>
 
   <style>
 
@@ -16,43 +16,45 @@
 
     body{
       font-family:Arial, sans-serif;
-      background:#f5f7fa;
+      background:#f8f5f2;
       color:#222;
       line-height:1.6;
     }
 
     header{
-      background:linear-gradient(135deg,#111827,#1f2937);
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
       color:white;
-      padding:80px 20px;
       text-align:center;
+      padding:120px 20px;
     }
 
     header h1{
-      font-size:48px;
+      font-size:55px;
       margin-bottom:15px;
     }
 
     header p{
-      max-width:600px;
+      font-size:20px;
+      max-width:650px;
       margin:auto;
-      font-size:18px;
-      opacity:0.9;
     }
 
-    .hero-btn{
+    .btn{
       display:inline-block;
       margin-top:30px;
-      background:#25D366;
+      background:#d97706;
       color:white;
-      padding:15px 32px;
+      padding:15px 30px;
       border-radius:10px;
       text-decoration:none;
       font-weight:bold;
       transition:0.3s;
     }
 
-    .hero-btn:hover{
+    .btn:hover{
       transform:scale(1.05);
     }
 
@@ -62,8 +64,8 @@
       margin:auto;
     }
 
-    .features{
-      padding:70px 20px;
+    .section{
+      padding:80px 20px;
     }
 
     .section-title{
@@ -72,35 +74,44 @@
     }
 
     .section-title h2{
-      font-size:36px;
+      font-size:38px;
       margin-bottom:10px;
     }
 
-    .feature-grid{
+    .menu-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
       gap:25px;
     }
 
-    .feature-card{
+    .menu-card{
       background:white;
-      padding:30px;
       border-radius:15px;
+      overflow:hidden;
       box-shadow:0 5px 15px rgba(0,0,0,0.08);
       transition:0.3s;
     }
 
-    .feature-card:hover{
+    .menu-card:hover{
       transform:translateY(-8px);
     }
 
-    .feature-card h3{
-      margin-bottom:15px;
+    .menu-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .menu-content{
+      padding:20px;
+    }
+
+    .menu-content h3{
+      margin-bottom:10px;
     }
 
     .about{
       background:white;
-      padding:80px 20px;
       text-align:center;
     }
 
@@ -109,10 +120,6 @@
       margin:auto;
       margin-top:20px;
       font-size:18px;
-    }
-
-    .testimonials{
-      padding:80px 20px;
     }
 
     .testimonial-grid{
@@ -129,25 +136,14 @@
       box-shadow:0 5px 15px rgba(0,0,0,0.08);
     }
 
-    .testimonial strong{
-      display:block;
-      margin-top:15px;
-    }
-
     .contact{
-      background:#111827;
+      background:#1f2937;
       color:white;
       text-align:center;
-      padding:80px 20px;
-    }
-
-    .contact h2{
-      margin-bottom:20px;
-      font-size:36px;
     }
 
     footer{
-      background:#0b1120;
+      background:#111827;
       color:white;
       text-align:center;
       padding:20px;
@@ -160,52 +156,67 @@
 <body>
 
   <header>
-    <div class="container">
 
-      <h1>NovaFix Repairs</h1>
+    <h1>Flame Grill</h1>
 
-      <p>
-        Professional smartphone repairs with fast turnaround,
-        trusted technicians and affordable pricing.
-      </p>
+    <p>
+      Delicious meals, premium dining experience and unforgettable flavors.
+    </p>
 
-      <a href="https://wa.me/2340000000000" class="hero-btn">
-        Chat on WhatsApp
-      </a>
+    <a href="https://wa.me/2340000000000" class="btn">
+      Reserve a Table
+    </a>
 
-    </div>
   </header>
 
-  <section class="features">
+  <section class="section">
 
     <div class="container">
 
       <div class="section-title">
-        <h2>Why Customers Choose Us</h2>
-        <p>Reliable service trusted by hundreds of customers.</p>
+        <h2>Popular Dishes</h2>
+        <p>Customer favorites prepared by our top chefs.</p>
       </div>
 
-      <div class="feature-grid">
+      <div class="menu-grid">
 
-        <div class="feature-card">
-          <h3>Fast Repairs</h3>
-          <p>
-            Most repairs are completed the same day with quick delivery.
-          </p>
+        <div class="menu-card">
+
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop">
+
+          <div class="menu-content">
+            <h3>Classic Burger</h3>
+            <p>
+              Juicy grilled beef burger with fresh vegetables and fries.
+            </p>
+          </div>
+
         </div>
 
-        <div class="feature-card">
-          <h3>Affordable Pricing</h3>
-          <p>
-            Premium service without overpriced repair costs.
-          </p>
+        <div class="menu-card">
+
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop">
+
+          <div class="menu-content">
+            <h3>Steak Special</h3>
+            <p>
+              Tender steak cooked perfectly with our signature seasoning.
+            </p>
+          </div>
+
         </div>
 
-        <div class="feature-card">
-          <h3>Experienced Technicians</h3>
-          <p>
-            Skilled professionals handling all major phone brands.
-          </p>
+        <div class="menu-card">
+
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop">
+
+          <div class="menu-content">
+            <h3>Italian Pizza</h3>
+            <p>
+              Crispy stone-baked pizza with rich cheese and fresh toppings.
+            </p>
+          </div>
+
         </div>
 
       </div>
@@ -214,48 +225,48 @@
 
   </section>
 
-  <section class="about">
+  <section class="section about">
 
     <div class="container">
 
       <div class="section-title">
-        <h2>About NovaFix</h2>
+        <h2>About Flame Grill</h2>
       </div>
 
       <p>
-        We help customers fix broken devices quickly and professionally.
-        From screen replacements to battery repairs, we focus on quality,
-        speed and customer satisfaction.
+        Flame Grill combines premium ingredients, experienced chefs and a
+        welcoming atmosphere to deliver a memorable dining experience for
+        every guest.
       </p>
 
     </div>
 
   </section>
 
-  <section class="testimonials">
+  <section class="section">
 
     <div class="container">
 
       <div class="section-title">
-        <h2>What Customers Say</h2>
+        <h2>Customer Reviews</h2>
       </div>
 
       <div class="testimonial-grid">
 
         <div class="testimonial">
           <p>
-            “Excellent service and very fast repair. My phone works perfectly again.”
+            “The food was incredible and the service was excellent.”
           </p>
 
-          <strong>— Daniel K.</strong>
+          <strong>— Michael T.</strong>
         </div>
 
         <div class="testimonial">
           <p>
-            “Affordable pricing and professional staff. Highly recommended.”
+            “One of the best dining experiences I’ve had in Lagos.”
           </p>
 
-          <strong>— Sarah M.</strong>
+          <strong>— Sarah O.</strong>
         </div>
 
       </div>
@@ -264,22 +275,22 @@
 
   </section>
 
-  <section class="contact">
+  <section class="section contact">
 
-    <h2>Need a Repair?</h2>
+    <h2>Book Your Table Today</h2>
 
     <p>
-      Contact us today and get your device fixed quickly.
+      Visit us for an unforgettable dining experience.
     </p>
 
-    <a href="https://wa.me/2340000000000" class="hero-btn">
+    <a href="https://wa.me/2340000000000" class="btn">
       Contact Us
     </a>
 
   </section>
 
   <footer>
-    <p>© 2026 NovaFix Repairs. All rights reserved.</p>
+    <p>© 2026 Flame Grill Restaurant. All rights reserved.</p>
   </footer>
 
 </body>

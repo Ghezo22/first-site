@@ -283,10 +283,95 @@
 
 }
 
+.navbar{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  background:rgba(11,17,32,0.7);
+  backdrop-filter:blur(12px);
+}
+
+.logo{
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.nav-links a{
+  color:#cbd5e1;
+  text-decoration:none;
+  transition:0.3s;
+  font-size:15px;
+}
+
+.nav-links a:hover{
+  color:#22d3ee;
+}
+
+.nav-btn{
+  background:#22d3ee;
+  color:#0b1120 !important;
+  padding:12px 22px;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.nav-btn:hover{
+  transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    padding:20px 7%;
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav-links{
+    justify-content:center;
+  }
+
+}
   </style>
 </head>
 
 <body>
+
+<nav class="navbar">
+
+  <div class="logo">
+    ZARELIX STUDIO
+  </div>
+
+  <div class="nav-links">
+
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+
+    <a href="https://wa.me/2340000000000" class="nav-btn">
+      Let’s Talk
+    </a>
+
+  </div>
+
+</nav>
 
   <header class="hero">
 

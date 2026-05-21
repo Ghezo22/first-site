@@ -349,6 +349,49 @@ html{
   }
 
 }
+.footer{
+  background:#020617;
+  padding:80px 10%;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+
+.footer-content h2{
+  color:white;
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.footer-content p{
+  color:#94a3b8;
+  max-width:600px;
+  margin:auto;
+  line-height:1.8;
+}
+
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin:35px 0;
+  flex-wrap:wrap;
+}
+
+.footer-links a{
+  color:#22d3ee;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-links a:hover{
+  color:white;
+}
+
+.copyright{
+  margin-top:25px;
+  font-size:14px;
+  color:#64748b;
+}
   </style>
 </head>
 
@@ -595,9 +638,32 @@ html{
 
 </section>
 
-  <footer>
-    <p>© 2026 ZARELIX STUDIO. All rights reserved.</p>
-  </footer>
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <h2>ZARELIX STUDIO</h2>
+
+    <p>
+      Intelligent digital systems and creative solutions for modern brands.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="mailto:zarelixstudio@gmail.com">Email</a>
+
+    </div>
+
+    <p class="copyright">
+      © 2026 ZARELIX STUDIO. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
